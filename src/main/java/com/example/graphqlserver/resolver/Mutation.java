@@ -30,7 +30,7 @@ public class Mutation implements GraphQLMutationResolver {
 
     public Book newBook(Long id, String title, String isbn, Integer pageCount, Long authorId) {
         Book book = new Book();
-        book.setId(authorId);
+        book.setId(id);
         book.setAuthor(new Author(authorId));
         book.setTitle(title);
         book.setIsbn(isbn);
