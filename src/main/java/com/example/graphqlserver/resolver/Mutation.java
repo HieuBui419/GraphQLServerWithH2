@@ -18,8 +18,9 @@ public class Mutation implements GraphQLMutationResolver {
     }
 
     // Create
-    public Author newAuthor(String firstName, String lastName) {
+    public Author newAuthor(Long id, String firstName, String lastName) {
         Author author = new Author();
+        author.setId(id);
         author.setFirstName(firstName);
         author.setLastName(lastName);
 

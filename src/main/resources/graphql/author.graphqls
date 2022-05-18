@@ -21,7 +21,7 @@ type Query {
 }
 
 type Mutation {
-    newAuthor(firstName: String!, lastName: String!) : Author!
+    newAuthor(id: ID!, firstName: String!, lastName: String!) : Author!
     newBook(id: ID!, title: String!, isbn: String, pageCount: Int, author: ID!) : Book!
     deleteBook(id: ID!) : Boolean
     updateBookPageCount(pageCount: Int!, id: ID!) : Book!

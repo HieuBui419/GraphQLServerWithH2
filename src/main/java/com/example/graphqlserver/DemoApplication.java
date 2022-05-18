@@ -73,8 +73,16 @@ public class DemoApplication {
 //    public CommandLineRunner demo(AuthorRepository authorRepository, BookRepository bookRepository) {
 //        return (args) -> {
 //            Author author = new Author("Chien", "Minh");
+//            Author author2 = new Author("El", "Dorado");
+//            Author author3 = new Author("Elon", "Musk");
+//            Author author4 = new Author("R", "T");
 //            authorRepository.save(author);
+//            authorRepository.save(author2);
+//            authorRepository.save(author3);
+//            authorRepository.save(author4);
+//            bookRepository.deleteAll();
 //            bookRepository.save(new Book("Minh-Chien: A Biography", "0071809252", 1003, author));
+//            bookRepository.save(new Book("Tesla", "0093748156", 473, author3));
 //        };
 //    }
 }

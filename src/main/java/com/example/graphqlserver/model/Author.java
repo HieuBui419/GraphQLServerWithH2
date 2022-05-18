@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 public class Author {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+//    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "author_id", unique = true, nullable = false)
     private Long id;
 
