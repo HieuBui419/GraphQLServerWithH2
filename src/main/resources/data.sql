@@ -1,0 +1,5 @@
+insert into author(author_id, first_name, last_name) values (1, 'Chien', 'Minh')
+insert into author(author_id, first_name, last_name) values (2, 'El', 'Dorado')
+insert into author(author_id, first_name, last_name) values (3, 'Elon', 'Musk')
+insert into book(id, title, isbn, page_count, author_id) values (1, 'Awakening', '004836443', 454, 1)
+insert into book(id, title, isbn, page_count, author_id) values (2, 'Thermometer', '005801932', 366, 2)

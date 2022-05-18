@@ -1,0 +1,21 @@
+type Book {
+    id: ID!
+    title: String!
+    isbn: String!
+    pageCount: Int
+    author: Author
+}
+
+# With extension, during runtime, Query will contain the queries from Book and Author
+extend type Query {
+    findBook(id: ID): Book
+    findAllBooks: [Book]!
+    countBooks: Long!
+}
+
+extend type Mutation {
+    newBook(id: ID!, title: String!, isbn: String, pageCount: Int, author: ID!) : Book!
+    deleteBook(id: ID!) : Boolean
+    updateBookPageCount(pageCount: Int!, id: ID!) : Book!
+    updateBook(id: ID!, title: String!, isbn: String, pageCount: Int, author: ID): Book!
+}
