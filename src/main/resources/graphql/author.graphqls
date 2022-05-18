@@ -22,7 +22,7 @@ type Query {
 
 type Mutation {
     newAuthor(firstName: String!, lastName: String!) : Author!
-    newBook(title: String!, isbn: String!, pageCount: Int, author: ID!) : Book!
+    newBook(id: ID!, title: String!, isbn: String, pageCount: Int, author: ID!) : Book!
     deleteBook(id: ID!) : Boolean
     updateBookPageCount(pageCount: Int!, id: ID!) : Book!
 }
